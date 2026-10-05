@@ -1498,6 +1498,12 @@ body {
     background: var(--vp-c-bg);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--vp-nav-height);
+    scrollbar-gutter: stable;
+}
+
 body {
     background-color: var(--vp-c-bg);
     background-image: radial-gradient(rgba(122, 153, 141, 0.15) 1px, transparent 1px);
@@ -1822,6 +1828,10 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
     .VPNavBarMenuLink,
     .VPNavBarMenuLink::after,
     .VPNavBar .VPNavBarAppearance .VPSwitch,
