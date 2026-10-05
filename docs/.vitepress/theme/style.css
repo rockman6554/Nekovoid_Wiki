@@ -233,11 +233,12 @@ body::after {
 
 .related-links ul {
     margin: 0;
-    padding-left: 1.25rem;
+    padding-inline-start: 0;
 }
 
 .related-links li {
     margin: 0.45rem 0;
+    padding-inline-start: 1.25rem;
 }
 
 .related-links li a {
@@ -250,27 +251,10 @@ body::after {
     transition: none;
 }
 
-.related-links li a.related-links-external {
-    color: var(--vp-c-brand-2);
-    font-family: var(--vp-font-family-mono);
-    font-size: calc(0.92rem * var(--content-text-scale, 1));
-    font-weight: 600;
-    letter-spacing: 0.02em;
-}
-
 .related-links li a:hover,
 .related-links li a:focus-visible {
     color: var(--vp-c-brand-2);
     text-decoration: underline;
-}
-
-.related-links li a.related-links-external:hover,
-.related-links li a.related-links-external:focus-visible {
-    color: var(--vp-c-text-1);
-}
-
-.related-links li a span {
-    color: #7f9193;
 }
 
 /* Suggested topics inside the local search dialog. */

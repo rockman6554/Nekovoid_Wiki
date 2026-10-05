@@ -158,7 +158,7 @@ watch(() => route.path, refreshManualSection)
           :target="link.external ? '_blank' : undefined"
           :rel="link.external ? 'noopener noreferrer' : undefined"
         >
-          {{ link.title }}<span v-if="link.description"> — {{ link.description }}</span>
+          {{ link.title }}
         </a>
       </li>
     </ul>
